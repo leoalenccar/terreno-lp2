@@ -11,6 +11,10 @@ public class Terreno {
     }
 
     public Terreno(int tamanho) {
+        if(tamanho <= 0) {
+            throw new IllegalArgumentException("Tamanho deve ser maior que zero");
+        }
+
         this.tamanho = tamanho;
         this.altitudes = new int[tamanho][tamanho];
     }
