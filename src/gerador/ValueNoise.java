@@ -7,7 +7,7 @@ import java.util.Random;
 public class ValueNoise extends GeradorAltitude {
     static final int DIVISOES = 32;
 
-    protected ValueNoise(long seed, int min, int max) {
+    public ValueNoise(long seed, int min, int max) {
         super(seed, min, max);
     }
 
