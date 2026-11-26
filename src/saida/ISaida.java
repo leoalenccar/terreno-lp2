@@ -1,5 +1,5 @@
 package saida;
 
 public interface ISaida {
-    void exportar();
+    void exportar(DadosSaida dados);
 }

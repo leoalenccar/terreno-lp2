@@ -2,7 +2,7 @@ package saida;
 
 public class SaidaImagem implements ISaida{
     @Override
-    public void exportar() {
+    public void exportar(DadosSaida dados) {
 
     }
 }
