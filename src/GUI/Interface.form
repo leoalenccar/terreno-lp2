@@ -1,13 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.Interface">
-  <grid id="27dc6" row-count="1" column-count="1" layout-manager="GridLayoutManager">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="17" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
-      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+      <xy x="20" y="20" width="740" height="534"/>
     </constraints>
     <properties/>
     <border type="none"/>
-    <children/>
+    <children>
+      <component id="3c496" class="javax.swing.JLabel" binding="textoAlgoritmo">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana"/>
+          <text value="Algoritmo"/>
+        </properties>
+      </component>
+      <component id="6dc4" class="javax.swing.JComboBox" binding="seletorAlgoritmo">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="fa9f0" class="javax.swing.JLabel" binding="textoAltura">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana"/>
+          <text value="Altura"/>
+        </properties>
+      </component>
+      <component id="65da0" class="javax.swing.JLabel" binding="textoAltMaxima">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana" size="10"/>
+          <text value="Máxima"/>
+        </properties>
+      </component>
+      <component id="b7253" class="javax.swing.JTextField" binding="campoAltMaxima">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="c6a78" class="javax.swing.JLabel" binding="textoTamanho">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana"/>
+          <text value="Tamanho"/>
+        </properties>
+      </component>
+      <component id="e07ae" class="javax.swing.JLabel" binding="textoAltMinima">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana" size="10"/>
+          <text value="Mínima"/>
+        </properties>
+      </component>
+      <component id="925fa" class="javax.swing.JTextField" binding="campoAltMinima">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="cd8be" class="javax.swing.JLabel" binding="textoTamLargura">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana" size="10"/>
+          <text value="Largura"/>
+        </properties>
+      </component>
+      <component id="4ca74" class="javax.swing.JLabel" binding="textoTamAltura">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana" size="10"/>
+          <text value="Altura"/>
+        </properties>
+      </component>
+      <vspacer id="1dc3">
+        <constraints>
+          <grid row="1" column="3" row-span="16" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="10" height="10"/>
+            <preferred-size width="10" height="10"/>
+            <maximum-size width="10" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="c32ab" class="javax.swing.JTextField" binding="campoTamLargura">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="7e5c3" class="javax.swing.JTextField" binding="campoTamAltura">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <component id="9c04a" class="javax.swing.JLabel" binding="textoPaleta">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana"/>
+          <text value="Paleta"/>
+        </properties>
+      </component>
+      <component id="402ac" class="javax.swing.JComboBox" binding="seletorPaleta">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="1d8fb" class="javax.swing.JButton" binding="gerarTerrenoButton" default-binding="true">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Verdana"/>
+          <text value="Gerar terreno"/>
+        </properties>
+      </component>
+      <hspacer id="ff76e">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <grid id="59e0b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="4" row-span="14" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true">
+            <minimum-size width="200" height="200"/>
+            <preferred-size width="249" height="300"/>
+            <maximum-size width="400" height="400"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <hspacer id="30e5c">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="7c6c4">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="9b2ec">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="eafd0">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="ce98d">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="f569b">
+        <constraints>
+          <grid row="0" column="0" row-span="17" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="54937" class="javax.swing.JButton" binding="exportarImagemButton" default-binding="true">
+        <constraints>
+          <grid row="15" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Exportar imagem"/>
+        </properties>
+      </component>
+      <component id="cd3f8" class="javax.swing.JButton" binding="exportarTerrenoButton">
+        <constraints>
+          <grid row="15" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=" Exportar terreno"/>
+        </properties>
+      </component>
+      <vspacer id="9a08a">
+        <constraints>
+          <grid row="0" column="6" row-span="17" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+    </children>
   </grid>
 </form>
