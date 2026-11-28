@@ -27,10 +27,11 @@ public class SaidaTexto implements ISaida {
 
     private String serializar(Terreno terreno) {
 
-        int tamanho = terreno.getTamanho();
-        String texto = "Tamanho: "+ tamanho + "\nMatriz:\n\n";
-        for (int ii = 0; ii < tamanho; ii++) {
-            for (int jj = 0; jj < tamanho; jj++) {
+        int linhas = terreno.getLinhas();
+        int colunas = terreno.getColunas();
+        String texto = "Tamanho: "+ linhas +" x " + colunas + "\nMatriz:\n\n";
+        for (int ii = 0; ii < linhas; ii++) {
+            for (int jj = 0; jj < colunas; jj++) {
                 texto = texto.concat(Integer.toString(terreno.getAltitude(ii,jj)));
             }
             texto = texto.concat("\n");
