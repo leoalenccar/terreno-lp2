@@ -28,7 +28,7 @@ public class DiamondSquare extends GeradorAltitude {
     }
 
     private void square(Terreno t, Random r, int lin, int col, int alcance, int ruido) {
-        int tam = t.getTamanho();
+        int tam = t.getLinhas();
         int soma = 0;
         int cont = 0;
 
@@ -61,7 +61,7 @@ public class DiamondSquare extends GeradorAltitude {
     }
 
     private void diamond(Terreno t, Random r, int lin, int col, int alcance, int ruido) {
-        int tam = t.getTamanho();
+        int tam = t.getLinhas();
         int soma = 0;
         int cont = 0;
         
@@ -95,7 +95,12 @@ public class DiamondSquare extends GeradorAltitude {
 
     @Override
     protected void preencher(Terreno t, Random r) {
-        int tam = t.getTamanho();
+        int tam = t.getLinhas();
+
+        if(t.getLinhas() != t.getColunas()) {
+            throw new IllegalArgumentException("DiamondSquare exige terreno quadrado");
+        }
+
         if (!tamanhoValido(tam)) {
             throw new IllegalArgumentException("Tamanho deve ser 2^n + 1, digitado: " + tam);
         }

@@ -18,9 +18,9 @@ public abstract class GeradorAltitude {
         this.max = max;
     }
 
-    public Terreno gerar(int tamanho) {
+    public Terreno gerar(int linhas, int colunas) {
         Random random = new Random(seed);
-        Terreno t = new Terreno(tamanho);
+        Terreno t = new Terreno(linhas, colunas);
         preencher(t, random);
         limitar(t);
 
@@ -31,10 +31,8 @@ public abstract class GeradorAltitude {
 
     // nao deixa altitude ser menor que o mínimo ou maior que o máximo
     private void limitar(Terreno t) {
-        int n = t.getTamanho();
-
-        for(int lin = 0; lin < n; lin++) {
-            for(int col = 0; col < n; col++) {
+        for(int lin = 0; lin < t.getLinhas(); lin++) {
+            for(int col = 0; col < t.getColunas(); col++) {
                 int alt = t.getAltitude(lin, col);
                 if(alt < min) {
                     alt = min;

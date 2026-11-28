@@ -2,21 +2,23 @@ package terreno;
 
 public class Terreno {
     private int altitudes[][];
-    private int tamanho;
+    private int linhas;
+    private int colunas;
 
     private void validar(int lin, int col) {
-        if (lin < 0 || lin >= tamanho || col < 0 || col >= tamanho) {
+        if (lin < 0 || lin >= linhas || col < 0 || col >= colunas) {
             throw new PosicaoInvalidaException(lin, col);
         }
     }
 
-    public Terreno(int tamanho) {
-        if(tamanho <= 0) {
-            throw new IllegalArgumentException("Tamanho deve ser maior que zero");
+    public Terreno(int linhas, int colunas) {
+        if(linhas <= 0 || colunas <= 0) {
+            throw new IllegalArgumentException("Linhas e colunas devem ser positivas");
         }
 
-        this.tamanho = tamanho;
-        this.altitudes = new int[tamanho][tamanho];
+        this.linhas = linhas;
+        this.colunas = colunas;
+        this.altitudes = new int[linhas][colunas];
     }
     
     public int getAltitude(int lin, int col) {
@@ -29,7 +31,11 @@ public class Terreno {
         altitudes[lin][col] = alt;
     }
 
-    public int getTamanho() {
-        return tamanho;
+    public int getLinhas() {
+        return linhas;
+    }
+
+    public int getColunas() {
+        return colunas;
     }
 }
